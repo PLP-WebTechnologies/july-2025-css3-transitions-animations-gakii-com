@@ -1,0 +1,55 @@
+/* === General Styles === */
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* === Form Styles === */
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+/* === Transitions === */
+button:hover {
+  background-color: #444;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* === Animation for the box === */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  margin-top: 10px;
+  transition: transform 0.5s ease;
+}
+
+.box.animate {
+  animation: bounce 0.8s ease;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-50px); }
+  60%  { transform: translateY(20px); }
+  100% { transform: translateY(0); }
+}
